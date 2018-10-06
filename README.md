@@ -48,4 +48,4 @@ update release which can result in an outdated version.
 2. `db` container does not have a persistent database.
 3. Despite it's difficult to do so, do not even try running a forging node.
 4. Current implementation can only be used for mainnet.
-5. Source code of the postgres image used: https://github.com/deadlock-delegate/docker-ark-postgres
+5. Source code of the rokson/arkv1db image: https://github.com/deadlock-delegate/docker-ark-postgres
