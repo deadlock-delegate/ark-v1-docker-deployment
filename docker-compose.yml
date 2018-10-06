@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  node:
+    command: node app.js --genesis genesisBlock.mainnet.json --config config.mainnet.docker.json
+    image: rokson/arkv1
+    depends_on:
+      - db
+    expose:
+      - "4001"
+    ports:
+      - "4001:4001"
+
+  db:
+    image: rokson/arkv1db
