@@ -20,7 +20,7 @@ check if the database is still restoring by checking if `pg_restore` process is 
 
 ## Node is in a weird state, how can I rebuild it?
 
-1. Stop all running container: `docker-compose kill`
+1. Stop all containers: `docker-compose kill`
 2. Remove database container: `docker-compose rm db`
 3. Restore the database: `docker-compose exec -d db make restore`
 4. DO NOT START THE NODE - wait for the database to be fully restored. This can easily take up to 20
@@ -48,3 +48,4 @@ update release which can result in an outdated version.
 2. `db` container does not have a persistent database.
 3. Despite it's difficult to do so, do not even try running a forging node.
 4. Current implementation can only be used for mainnet.
+5. Source code of the postgres image used: https://github.com/deadlock-delegate/docker-ark-postgres
