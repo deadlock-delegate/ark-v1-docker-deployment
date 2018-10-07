@@ -14,7 +14,7 @@ only be used with mainnet!
 4. DO NOT START THE NODE - wait for the database to be fully restored. This can easily take up to 20
 minutes, depending on your specs and how many other nodes are downloading the DB image. You can
 check if the database is still restoring by checking if `pg_restore` process is running:
-`docker-compose exec -T db /bin/bash -c 'ps aux | grep pg_restore'`
+`docker-compose exec db /bin/bash -c 'ps aux | grep pg_restore'`
 5. Start the node: `docker-compose up -d --no-recreate node`
 
 
@@ -26,7 +26,7 @@ check if the database is still restoring by checking if `pg_restore` process is 
 4. DO NOT START THE NODE - wait for the database to be fully restored. This can easily take up to 20
 minutes, depending on your specs and how many other nodes are downloading the DB image. You can
 check if the database is still restoring by checking if `pg_restore` process is running:
-`docker-compose exec -T db /bin/bash -c 'ps aux | grep pg_restore'`
+`docker-compose exec db /bin/bash -c 'ps aux | grep pg_restore'`
 5. Start the node: `docker-compose up -d --no-recreate node`
 
 
